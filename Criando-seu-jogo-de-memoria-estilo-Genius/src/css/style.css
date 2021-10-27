@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: #d0ffef;
+}
+
+body .main-game {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main-game .center {
+  border: solid #d0ffef 3px;
+  border-radius: 100%;
+  background-color: #d0ffef;
+  background-image: url(../img/brain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin: auto;
+  height: 350px;
+  width: 350px;
+  z-index: 5;
+}
+
+body .main-game .brainius {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "green red"  "yellow blue";
+  grid-gap: 10px;
+  border: solid #FFF 1px;
+  background-color: #FFF;
+  border-radius: 100%;
+  width: 90%;
+  max-width: 700px;
+  height: 700px;
+}
+
+body .main-game .brainius .blue {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: blue;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+}
+
+body .main-game .brainius .red {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: red;
+  background-color: red;
+  border-top-right-radius: 100%;
+}
+
+body .main-game .brainius .green {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: green;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+body .main-game .brainius .yellow {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: yellow;
+  background-color: #d3d31d;
+  border-bottom-left-radius: 100%;
+}
+
+body .main-game .brainius .selected {
+  opacity: .5;
+}

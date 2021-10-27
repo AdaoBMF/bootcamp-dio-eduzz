@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-color: #d0ffef;
+  
+  .main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .logo{
+    //   position: fixed;
+    //   z-index: 4;
+    //   width: 300pix;
+    // }
+
+    .center{
+      border: solid #d0ffef 3px;
+      border-radius: 100%;
+      background-color: #d0ffef;
+      background-image: url(../img/brain.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+      margin: auto;
+      height: 350px;
+      width: 350px;
+      z-index: 5;
+    }
+
+    .brainius {
+      display: grid;
+      grid-template-areas: 
+      "green red" 
+      "yellow blue";
+      grid-gap: 10px;
+      border: solid #FFF 1px;
+      background-color: #FFF;
+      border-radius: 100%;
+      width: 90%;
+      max-width: 700px;
+      height: 700px;
+
+      .blue {
+        grid-area: blue;
+        background-color: blue;
+        border-bottom-right-radius: 100%;
+      }
+      .red {
+        grid-area: red;
+        background-color: red;
+        border-top-right-radius: 100%;
+      }
+      .green {
+        grid-area: green;
+        background-color: green;
+        border-top-left-radius: 100%;
+      }
+      .yellow {
+        grid-area: yellow;
+        background-color: rgb(211, 211, 29);
+        border-bottom-left-radius: 100%;
+      }
+      .selected {
+        opacity: .5;
+      }
+
+    }
+
+  }
+
+}
