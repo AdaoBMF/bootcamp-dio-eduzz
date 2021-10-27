@@ -36,10 +36,10 @@ const lightColor = (element, number) => {
   let time = number * 500;
   setTimeout(() => {
     element.classList.add("selected");
-  }, time - 250);
+  }, time - 500);
   setTimeout(() => {
     element.classList.remove("selected");
-  },1250); // adicionado tempo para melhorar a visualização/jogabilidade 
+  },time -250); // adicionado tempo para melhorar a visualização/jogabilidade 
 };
 
 //checa se as cores foram clicadas estão na ordem correta
